@@ -43,6 +43,8 @@ alter table Employee_Payroll add Phone bigint;
 alter table Employee_Payroll add Address varchar(250) null default 'Pune';
 alter table Employee_Payroll add Department varchar(250) not null default 'HR';
 
+---UC9 Add Deduction, Taxable Pay, Income Tax, Net Pay----
+alter table Employee_Payroll add Deduction bigint,Taxable_Pay float,Income_Tax float,Net_Pay float;
 
 
 
