@@ -22,6 +22,20 @@ select * from Employee_Payroll where Name='Ajay';
 select * from Employee_Payroll
 select Id,Name,StartDate  from Employee_Payroll where Salary >30000;
 select Id,Name from Employee_Payroll where StartDate between cast ('2020-05-01' as date ) and StartDate  ; 
+select * from Employee_Payroll where Salary >30000;
+
+----UC6 Add Gender Column And insert Data------
+alter table Employee_Payroll 
+add Gender char(1);
+select * from Employee_Payroll
+update Employee_Payroll set Gender='M';
+update Employee_Payroll set Name ='Rakhi',Gender='F' where Name='Vivek';
+
+
+
+
+
+
 
 
 
