@@ -38,6 +38,15 @@ select min(Salary) as MinimumSalary from Employee_Payroll ;
 select max(Salary) as MaximumSalary from Employee_Payroll ;
 select count(Id) as CountGender,Gender from Employee_Payroll group by Gender;
 
+---UC8 Add address,phone,Department-----
+alter table Employee_Payroll add Phone bigint;
+alter table Employee_Payroll add Address varchar(250) null default 'Pune';
+alter table Employee_Payroll add Department varchar(250) not null default 'HR';
+
+
+
+
+
 
 
 
