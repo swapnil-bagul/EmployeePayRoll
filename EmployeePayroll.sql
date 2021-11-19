@@ -10,4 +10,8 @@ Salary float,
 StartDate date
 );
 
+----UC3 Insert Data Into Table------
+insert into Employee_Payroll
+values ('Ajay','20560','2020-05-22'),('Tushar','66532','2019-01-20'),('Omkar','45120','2021-10-06'),('Vivek','27860','2018-04-10');
+
 
