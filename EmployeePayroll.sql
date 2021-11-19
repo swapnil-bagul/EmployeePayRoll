@@ -31,6 +31,14 @@ select * from Employee_Payroll
 update Employee_Payroll set Gender='M';
 update Employee_Payroll set Name ='Rakhi',Gender='F' where Name='Vivek';
 
+----UC7 Find Sum,Min,Max,Avg & Count M,F------
+
+select sum(Salary) as TotalSalary from Employee_Payroll ;
+select min(Salary) as MinimumSalary from Employee_Payroll ;
+select max(Salary) as MaximumSalary from Employee_Payroll ;
+select count(Id) as CountGender,Gender from Employee_Payroll group by Gender;
+
+
 
 
 
